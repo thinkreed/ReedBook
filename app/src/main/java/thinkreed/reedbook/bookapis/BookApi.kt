@@ -8,7 +8,7 @@ import thinkreed.reedbook.models.Chapter
 /**
  * Created by thinkreed on 2018/1/10.
  */
-interface book_chapter {
+interface BookApi {
 
     @POST("book")
     fun getChapter(@Field("book_name") bookName: String, @Field("chapter_index") chapterIndex: String): Observable<Chapter>
